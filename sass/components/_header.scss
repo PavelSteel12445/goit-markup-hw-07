@@ -1,0 +1,108 @@
+.header {
+    border-bottom: 1px solid #f5f5f5;
+  }
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+  }
+  
+  &__nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  &__logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--color-primary);
+    text-decoration-line: none;
+    letter-spacing: 0.03em;
+  }
+  &__logotipe {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--color-accent);
+    text-decoration-line: none;
+    letter-spacing: 0.03em;
+  }
+ 
+  &-menu {
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+  }
+  
+  &__link {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    color: inherit;
+  }
+  .current__page {
+    position: relative;
+    color: var(--color-accent);
+    &::after {
+      display: block;
+      position: absolute;
+      background-color: var(--color-accent);
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      bottom: 0px;
+      content: "";
+    }
+  }
+  
+  .adress__logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .adress__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: var(--color-text);
+    text-decoration-line: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    gap: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    & :hover,
+    & :focus {
+      color: var(--color-accent);
+    }
+  }
+  
+  .mail__icon {
+    max-width: 16px;
+    max-height: 12px;
+    align-content: center;
+    fill: var(--color-text);
+    .adress__link:hover & ,
+    .adress__link:focus &  {
+      fill: var(--color-accent);
+    }
+  }
+  
+  
+  .phone__icon {
+    max-width: 10px;
+    max-height: 16px;
+    align-content: center;
+    fill: var(--color-text);
+    .adress__link:hover &,
+    .adress__link:focus & {
+      fill: var(--color-accent);
+    }
+  }
+ 
