@@ -18,25 +18,25 @@
     />
   </head>
   <body class="body">
-      <header>
+    <header>
       <div class="container">
         <div class="header__container">
-          <nav class="nav">
-            <a href="./index.html" class="logotipe__header"
-              >Web<span class="logo__header">Studio</span>
+          <nav class="header__nav">
+            <a href="./index.html" class="header__logotipe"
+              >Web<span class="header__logo">Studio</span>
             </a>
 
             <ul class="header-menu">
               <li>
-                <a href="./index.html" class="link__header"
-                  >Студія</a
+                <a href="./index.html" class="header__link">Студія</a>
+              </li>
+              <li>
+                <a href="./portfolio.html" class="header__link current__page"
+                  >Портфоліо</a
                 >
               </li>
               <li>
-                <a href="./portfolio.html" class="link__header  current__page">Портфоліо</a>
-              </li>
-              <li>
-                <a href="#" class="link__header">Контакти</a>
+                <a href="#" class="header__link">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -67,7 +67,9 @@
         <div class="portfolio-container">
           <h1 class="portfolio__title visually-hidden">Portfolio</h1>
           <ul class="button-container">
-            <li><button class="secondary__button" type="button">Усі</button></li>
+            <li>
+              <button class="secondary__button" type="button">Усі</button>
+            </li>
             <li>
               <button class="secondary__button" type="button">Веб-сайти</button>
             </li>
@@ -283,8 +285,8 @@
     <footer class="footer">
       <div class="container footer-section">
         <div>
-          <a href="./index.html" class="logotipe__footer"
-            >Web<span class="logo__footer">Studio </span></a
+          <a href="./index.html" class="footer__logotipe"
+            >Web<span class="footer__logo">Studio </span></a
           >
           <address class="adress">
             <ul>
@@ -344,17 +346,18 @@
             </li>
           </ul>
         </div>
-        <form class="footer-feedback">
+        <form class="feedback">
           <p class="feedback__title">Підпишіться на розсилку</p>
-         <div class="feedback__items"> <input class="feedback__input" type="text" placeholder="E-mail" />
-        <button class="feedback__button" type="submit">
-            Підписатися<svg class="feedback__icon" width="24px" height="24px">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </div>
+          <div class="feedback__items">
+            <input class="feedback__input" type="text" placeholder="E-mail" />
+            <button class="feedback__button" type="submit">
+              Підписатися<svg class="feedback__icon" width="24px" height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </form>
-      
+      </div>
     </footer>
     <script src="./js/modal.js"></script>
   </body>
