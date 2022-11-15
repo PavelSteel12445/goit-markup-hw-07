@@ -5,104 +5,101 @@
     height: 252px;
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-  .container .footer-section{
-    display: flex;
-    align-items: baseline;
-  }
-  &__logotipe {
-    font-family: "Raleway";
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    color: var(--color-accent);
-    text-decoration-line: none;
-    margin-bottom: 20px;
-    letter-spacing: 0.03em;
-  }
-  &__logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    color: var(--color-background);
-    text-decoration-line: none;
-    letter-spacing: 0.03em;
-  }
-  
-  .adress {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    color: var(--color-background);
-    letter-spacing: 0.03em;
-  }
-  
-  &__link {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.6);
-    letter-spacing: 0.03em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
+    &__logotipe {
+      font-family: "Raleway";
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.2;
       color: var(--color-accent);
+      text-decoration-line: none;
+      margin-bottom: 20px;
+      letter-spacing: 0.03em;
+    }
+    &__logo {
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 1.2;
+      color: var(--color-background);
+      text-decoration-line: none;
+      letter-spacing: 0.03em;
+    }
+    &__link {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 0.03em;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: var(--color-accent);
+      }
+    }
+    
+    
+    
+    &__box {
+      margin-top: 9px;
+      &:first-child{margin-top: 20px;}
+    }
+    
+    
+    &-social {
+      align-items: center;
+      justify-content: flex-start;
+      margin-left: 70px;
+    }
+    
+    &__social-title {
+      color: var(--color-background);
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.2;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    
+    &-social-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    
+    &__box-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        background-color: var(--color-accent);
+      }
+    }
+    
+    
+    &__icons {
+      fill: var(--color-background);
+      max-width: 20px;
+      max-height: 20px;
+    }
+    &__container{
+      display: flex;
+      align-items: baseline;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
     }
   }
+ 
   
   
-  
-  &__box {
-    margin-top: 9px;
-    &__box:first-child{margin-top: 20px;}
-  }
-  
-  
-  &-social {
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 70px;
-  }
-  
-  &__social-title {
-    color: var(--color-background);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-  }
-  
-  &-social-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
-  }
-  
-  &__box-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &__box-icons:hover,
-    &__box-icons:focus {
-      background-color: var(--color-accent);
-    }
-  }
-  
-  
-  &__icons {
-    fill: var(--color-background);
-    max-width: 20px;
-    max-height: 20px;
-  }
   
   

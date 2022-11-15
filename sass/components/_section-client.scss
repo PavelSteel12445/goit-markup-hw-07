@@ -3,7 +3,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
     margin: 0 auto;
-  }
+  
   &-block {
     display: flex;
     gap: 30px;
@@ -16,13 +16,9 @@
   
   &__icons {
     fill: var(--color-icons);
-    &__link:hover &,
-    &__link:focus & {
-      fill: var(--color-accent);
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+   
   }
-  
+ 
   &__link {
     display: flex;
     align-items: center;
@@ -37,6 +33,13 @@
     &:focus {
       border-color: var(--color-accent);
     }
+  } 
+  &__link:hover &__icons,
+  &__link:focus &__icons {
+    fill: var(--color-accent);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+} 
+ 
   
   

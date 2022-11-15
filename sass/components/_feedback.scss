@@ -1,6 +1,6 @@
 .feedback {
     margin-left: 93px;
-  }
+  
   
   &__title {
     font-weight: 700;
@@ -54,8 +54,9 @@
 }
  
   
-  .feedback__icon {
+&__icon {
     width: 24px;
     height: 24px;
     fill: var(--color-background);
   }
+}
